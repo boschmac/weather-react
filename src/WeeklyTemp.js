@@ -55,7 +55,7 @@ export default function WeeklyTemp() {
   </div>
       <span>
         <a
-          href="https://github.com/boschmac/SheCodes-WeatherApp"
+          href="https://github.com/boschmac/weather-react"
           target="_blank"
         >
           Open source code
