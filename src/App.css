@@ -1,38 +1,107 @@
-.App {
+#weather-description {
+  text-transform: capitalize;
+}
+
+#weather-today {
+  margin: 0 auto;
+  display: block;
+}
+
+.todays-temp {
+  font-size: 26px;
+}
+
+#weekly-weather {
+  padding: 20px;
+}
+
+.webpage {
+  width: 900px;
+  margin: 0 auto;
+  background-color: #8e2735;
+  border: 0.5rem outset #8e2735;
+  border-radius: 12px;
+  font-family: "Comfortaa", cursive;
+  color: #deae4f;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  color: #faf189;
+}
+
+h2 {
+  text-transform: capitalize;
+  font-size: small;
+  font-weight: lighter;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+h3 {
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+
+a {
+  color: #faf189;
+}
+
+
+
+.card-body {
+  background-color: #8e2735;
+}
+.card {
+  border-color: #8e2735;
+  background-color: #8e2735;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.weather-unit {
+  font-size: 20px;
+  display: inline;
+  position: relative;
+  top: -43px;
+  left: 30px;
+}
+
+.credit {
+  display: inline;
+}
+
+#weather-icon {
+  font-size: 40px;
+}
+p.current-date {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.button {
+  background-color: #611919;
+  color: #faf189;
+  border: 3px solid rgba(97, 25, 25, 0.5);
+  border-radius: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.button:hover {
+  color: #00587a;
+  background-color: #e7e7de;
+  display: inline;
+  border: 3px solid rgba(0, 88, 122, 0.5);
+  border-radius: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.search-bar {
+  margin-right: 15px;
+  margin-bottom: 15px;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App {
+  font-family: sans-serif;
+  text-align: center;
 }
