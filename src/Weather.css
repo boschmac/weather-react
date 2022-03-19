@@ -1,0 +1,24 @@
+.card {
+  background-color: #8e2735;
+  border: none;
+}
+
+.button {
+  background-color: #611919;
+  color: #faf189;
+  border: 3px solid rgba(97, 25, 25, 0.5);
+  border-radius: 20px;
+}
+
+.button:hover {
+  color: #00587a;
+  background-color: #e7e7de;
+  display: inline;
+  border: 3px solid rgba(0, 88, 122, 0.5);
+  border-radius: 20px;
+}
+
+.search-bar {
+  margin-right: 15px;
+  margin-bottom: 15px;
+}

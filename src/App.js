@@ -1,7 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Form from "./Search";
-import CurrentTemp from "./CurrentTemp";
+import Weather from "./Weather";
 import WeeklyTemp from "./WeeklyTemp";
 
 
@@ -10,9 +9,8 @@ function App() {
     <div className="App">
       <div className="container">
       <div className="webpage">
-      <Form />
-    <CurrentTemp />
-    <WeeklyTemp />
+      <Weather />
+     <WeeklyTemp />
     </div>
     </div>
     </div>
