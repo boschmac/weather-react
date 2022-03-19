@@ -49,16 +49,6 @@ a {
   color: #faf189;
 }
 
-
-
-.card-body {
-  background-color: #8e2735;
-}
-.card {
-  border-color: #8e2735;
-  background-color: #8e2735;
-}
-
 .card-title {
   font-weight: bold;
 }
@@ -104,4 +94,9 @@ p.current-date {
 .App {
   font-family: sans-serif;
   text-align: center;
+}
+
+.card {
+  background-color: #8e2735;
+  border: none;
 }
