@@ -22,3 +22,18 @@
   margin-right: 15px;
   margin-bottom: 15px;
 }
+
+.weather-icon {
+  font-size: 40px;
+}
+
+.weather ul {
+  list-style: none;
+  padding-top:10px;
+  padding-left:0;
+}
+
+.weather .todays-temp {
+  font-size: 26px;
+  padding: 20px 20px;
+}
