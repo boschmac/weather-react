@@ -16,18 +16,18 @@
 .webpage {
   width: 900px;
   margin: 0 auto;
-  background-color: #8e2735;
-  border: 0.5rem outset #8e2735;
+  background-color: #B4C6A6;
+  border: 0.5rem outset #B4C6A6;
   border-radius: 12px;
   font-family: "Comfortaa", cursive;
-  color: #deae4f;
+  color: #66806A;
 }
 
 h1,
 h2,
 h3 {
   text-align: center;
-  color: #faf189;
+  color: #66806A;
 }
 
 h2 {
@@ -44,7 +44,7 @@ h3 {
 }
 
 a {
-  color: #faf189;
+  color: #66806A;
 }
 
 .card-title {
