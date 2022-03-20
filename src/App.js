@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <div className="container">
       <div className="webpage">
-      <Weather />
+      <Weather defaultCity="Kingston" />
      <WeeklyTemp />
     </div>
     </div>
