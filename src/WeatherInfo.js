@@ -3,8 +3,13 @@ import React from "react";
 export default function WeatherInfo (props){
   return (
     <div className="WeatherInfo">
-      <h3 className="location">{props.data.city}</h3>
+     
     <div className="row justify-content-md-center">
+      <div className="col-3"> 
+        <h3 className="location">
+          {props.data.city}
+          </h3>
+        </div>
       <div className="col-2 text-center">
         <img src={props.data.iconUrl} alt="" className="weather-icon" />
       </div>
@@ -22,7 +27,7 @@ export default function WeatherInfo (props){
         <ul>
           <li>Wind:{props.data.wind}</li>
           <li>Humidity: {props.data.humidity}</li>
-          <li>{props.data.description}</li>
+          <li className="text-capitalize">{props.data.description}</li>
         </ul>
       </div>
     </div>

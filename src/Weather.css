@@ -30,11 +30,15 @@
 
 .weather ul {
   list-style: none;
-  padding-top:10px;
+  padding-top:15px;
   padding-left:0;
 }
 
 .weather .todays-temp {
   font-size: 26px;
-  padding: 20px 20px;
+  padding: 26px 20px 0px 20px;
+}
+
+.weather .location {
+  padding-top: 30px;
 }
