@@ -5,7 +5,7 @@ export default function WeeklyTemp() {
   return (
     <div className="weekly-temp">
       <div className="card text-center mb-3">
-        <div className="row ">
+        <div className="row justify-content-md-center">
           <div className="col-2">
             <div className="card-body">
               <h5>Mon</h5>

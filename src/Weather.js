@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import FormattedDate from "./FormattedDate";
 import "./Weather.css";
 
 
@@ -11,7 +12,7 @@ export default function Weather() {
     setweatherData({
       ready:true,
       temperature:response.data.main.temp,
-      date: "Tuesday, Jan 12, 2022",
+      date: new Date(response.data.dt * 1000),
       wind: response.data.wind.speed,
       city:response.data.name,
       humidity:response.data.main.humidity,
@@ -25,11 +26,11 @@ export default function Weather() {
     return (
       <div className="weather">
       <h1>Weather App</h1>
-      <h2 className="current-date">{weatherData.date}</h2>
+      <h2 className="current-date"><FormattedDate date={weatherData.date} /></h2>
 
       <form className="search" id="city-search">
         <div className="row justify-content-md-center">
-          <div className="col-2"></div>
+     
           <div className="col-3 search-bar">
             <input
               type="text"
@@ -37,15 +38,15 @@ export default function Weather() {
               id="city-input"
               />
           </div>
-          <div className="col-1 search-bar">
+          <div className="col-1">
             <input
               type="submit"
               className="submit-button button"
               placeholder="Search"
               />
           </div>
-          <div className="col-3">
-            <button className="button" id="current-city">
+          <div className="col-2">
+            <button className="button">
               Current City
             </button>
           </div>
