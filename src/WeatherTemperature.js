@@ -21,23 +21,23 @@ export default function WeatherTemperature (props){
           {Math.round(props.celsius)}
         </span>
         <span className="d-flex weather-unit">
-        °C | <a href="/" onClick={showFahrenheit}>°F</a>
+        <span className="current-unit">°C </span>| <a href="/" onClick={showFahrenheit}>°F</a>
         </span>
     </p>
       </div>)
   } else {
     let fahrenheit = Math.round((props.celsius * 9/5) + 32);
-
-    <div className="col-1 text-center">     
+return(
+    <div className="col-2 text-center">     
       <p className="todays-temp">
         <span className="d-flex align-items-stretch">
           {fahrenheit}
         </span>
         <span className="d-flex weather-unit">
-        <a href="/" onClick={showCelsius}>°C </a> | °F
+        <a href="/" onClick={showCelsius}> °C </a> | <span className="current-unit">°F</span>
         </span>
     </p>
-      </div>
+      </div>)
   }
 
 }

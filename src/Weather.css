@@ -42,3 +42,11 @@
 .weather .location {
   padding-top: 30px;
 }
+
+.weather .todays-temp a {
+  text-decoration: none;
+}
+
+.weather .current-unit {
+  font-weight: bold;
+}
