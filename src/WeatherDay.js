@@ -3,7 +3,6 @@ import React from "react";
 export default function WeatherDay (props){
 function maxTemperature(){
   let temperature = Math.round(props.data.temp.max);
-  console.log(props);
   return `${temperature}°`;
 }
 
