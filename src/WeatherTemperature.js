@@ -23,8 +23,8 @@ export default function WeatherTemperature (props){
         <span className="d-flex weather-unit">
         <span className="current-unit">°C </span>| <a href="/" onClick={showFahrenheit}>°F</a>
         </span>
-    </p>
-      </div>)
+      </p>
+    </div>)
   } else {
     let fahrenheit = Math.round((props.celsius * 9/5) + 32);
 return(

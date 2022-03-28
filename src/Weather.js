@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import FormattedDate from "./FormattedDate";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 import "./Weather.css";
 
 
@@ -10,9 +11,9 @@ export default function Weather(props) {
   const [city, setCity] = useState (props.defaultCity)
   
   function handleResponse (response){
-    console.log(response);
     setweatherData({
       ready:true,
+      coordinates: response.data.coord,
       temperature:response.data.main.temp,
       date: new Date(response.data.dt * 1000),
       wind: response.data.wind.speed,
@@ -68,7 +69,16 @@ export default function Weather(props) {
       </form>
       
       <WeatherInfo data={weatherData}/>
-      
+      <WeatherForecast coordinates={weatherData.coordinates} />
+      <span>
+        <a
+          href="https://github.com/boschmac/weather-react"
+          target="_blank" rel="noreferrer"
+          >
+          Open source code
+        </a>
+        <p className="credit"> by Corinne Long</p>
+      </span>
     </div>);} else{
       search();
       return "Loading...";
